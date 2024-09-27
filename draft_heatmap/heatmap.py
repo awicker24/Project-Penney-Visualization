@@ -43,7 +43,7 @@ def create_heatmaps(num_cards = num_cards_result, num_tricks = num_tricks_result
                 annot=True,
                 fmt = '.2%',
                 annot_kws={'color': 'black'},
-                cmap=LinearSegmentedColormap.from_list('rg',["r", "w", "g"], N=256),
+                cmap="Oranges,
                 linewidths=.5,
                 cbar_kws={'label': 'Win Probability', 'format': mtick.PercentFormatter(xmax=1, decimals=0)})
     plt.title('Win Probabilities for Card Scoring')
@@ -57,7 +57,7 @@ def create_heatmaps(num_cards = num_cards_result, num_tricks = num_tricks_result
                 annot=True,
                 fmt = '.2%',
                 annot_kws={'color': 'black'},
-                cmap=LinearSegmentedColormap.from_list('rg',["r", "w", "g"], N=256),
+                cmap="Oranges",
                 linewidths=.5,
                 cbar_kws={'label': 'Win Probability', 'format': mtick.PercentFormatter(xmax=1, decimals=0)})
     plt.title('Win Probabilities for Trick Scoring')
