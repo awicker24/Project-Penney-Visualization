@@ -31,8 +31,9 @@ for x in range(8):
 np.save("card_wins.npy",card_wins_matrix)
 np.save("trick_wins.npy",trick_wins_matrix)
 
+
 sequences = ['BBB', 'BBR', 'BRB', 'BRR', 'RBB', 'RBR', 'RRB', 'RRR']
-def create_heatmaps(num_cards = num_cards_result, num_tricks = num_tricks_result):
+def create_heatmaps(num_cards = card_wins_matrix, num_tricks = card_wins_matrix):
 
     if not os.path.exists('figures'):
         os.makedirs('figures')
@@ -41,9 +42,8 @@ def create_heatmaps(num_cards = num_cards_result, num_tricks = num_tricks_result
     plt.figure(figsize=(10,8))
     sns.heatmap(num_cards,
                 annot=True,
-                fmt = '.2%',
                 annot_kws={'color': 'black'},
-                cmap="Oranges,
+                cmap="Oranges",
                 linewidths=.5,
                 cbar_kws={'label': 'Win Probability', 'format': mtick.PercentFormatter(xmax=1, decimals=0)})
     plt.title('Win Probabilities for Card Scoring')
@@ -55,7 +55,6 @@ def create_heatmaps(num_cards = num_cards_result, num_tricks = num_tricks_result
     plt.figure(figsize=(10,8))
     sns.heatmap(num_tricks,
                 annot=True,
-                fmt = '.2%',
                 annot_kws={'color': 'black'},
                 cmap="Oranges",
                 linewidths=.5,
@@ -64,6 +63,7 @@ def create_heatmaps(num_cards = num_cards_result, num_tricks = num_tricks_result
     plt.xlabel('Player 2 Choice')
     plt.ylabel('Player 1 Choice')
     plt.savefig('figures/num_trick_probs.png', bbox_inches = 'tight')
-
-if __name__ == "__main__":
-    create_heatmaps()
+    
+    return
+    
+create_heatmaps()
