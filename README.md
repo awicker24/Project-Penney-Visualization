@@ -9,4 +9,4 @@ to do:
 
 done:
 * indicate scoring by cards or by tricks in title
-* * plotting libraries to use (plotly)
+* plotting libraries to use (plotly)
