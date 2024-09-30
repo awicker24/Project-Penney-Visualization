@@ -26,7 +26,7 @@ def create_heatmap(array, variation):
         variation_name = ' tricks'
     
     fig = go.Figure(data = go.Heatmap(
-                   z = array, colorscale = 'Fall_r', # 'RdYlGn' or 'RdBu' or 'Oranges' or 'Fall_r'
+                   z = array, colorscale = 'blues', # 'RdYlGn' or 'RdBu' or 'Oranges' or 'Fall_r'
                    hovertemplate = "%{y}:%{x} win ratio <br />%{z}", name = "", # the name part stops 'trace=0' from popping up
                    text=array, texttemplate='%{text:.2f}',  
                    x = ['RRR', 'RRB', 'RBR', 'RBB', 'BRR', 'BRB', 'BBR', 'BBB'],
