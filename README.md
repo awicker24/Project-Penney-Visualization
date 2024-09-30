@@ -2,7 +2,7 @@
 
 to do:
 * save plots as HTML and PNG (separate function for each format?)
-* sample size in titles
+* sample size in titles - zoe
 * how the numbers are displayed (98 for 98%) - annie
 * ordering of plots - which one goes on left/right, where the diagonal is, how the sequences are ordered ("x"/"y" axes), color/font choices
 * presenting each vis one at a time
