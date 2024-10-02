@@ -1,3 +1,18 @@
+def sum_games(data = 'data/'):
+    '''Take all of the arrays in the /data folder, and add them together/divide by number of files to get the average'''
+    files = [file for file in os.listdir(data) if os.path.isfile(os.path.join(data, file))] # iterate through /data directory, only process files
+    games_total = None # where the sum of the games is going
+    for file in files:
+        file_path = os.path.join(data,file) # get file name and directory
+        game = np.load(file_path, allow_pickle=True) # load the file
+        if games_total is None:
+            games_total = game # initialize games_total sum array
+        else:
+            games_total += game
+    num_games = len(files)
+    return np.divide(games_total, num_games) # divide each individual element by the number of games played
+    
+
 def create_heatmap(array, variation, format, n):
     '''
     This function takes in an 8x8 array and makes a heatmap using plotly.go. The heatmap displays the win ratios for the 
