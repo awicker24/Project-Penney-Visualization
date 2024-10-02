@@ -70,6 +70,11 @@ def create_heatmap(array, variation, format, n):
         xgap = 1, ygap = 1
         )
 
+    fig.update_layout(
+        paper_bgcolor='white',  # plot color white
+        plot_bgcolor='white'   # inside axes white
+    )
+    
     fig.show()
 
     if format == 'html':
