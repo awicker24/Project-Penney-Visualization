@@ -1,4 +1,4 @@
-def create_heatmap(array, variation, format):
+def create_heatmap(array, variation, format, n):
     '''
     This function takes in an 8x8 array and makes a heatmap using plotly.go. The heatmap displays the win ratios for the 
     2nd player, who will choose their pattern based on what the 1st player chose. The heatmap is scaled so that percentages 
@@ -35,7 +35,7 @@ def create_heatmap(array, variation, format):
                    y = ['RRR', 'RRB', 'RBR', 'RBB', 'BRR', 'BRB', 'BBR', 'BBB'],
                    hoverongaps = False))
     fig.update_layout(
-        title = f'Penney Game, variation {str(variation)}: Player Two Win Ratio for{variation_name}',  #this is the percentage of games that player 2 wins
+        title = f'Penney Game, variation {str(variation)}: Player Two Win Ratio for{variation_name}.n = {n}',  #this is the percentage of games that player 2 wins
         title_x = 0.5,
         title_y = 0.9,
         title_font_size = 20,
