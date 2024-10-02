@@ -1,6 +1,4 @@
-# i think we can take out format and have only array and variation as parameters
-# the reason i want to say we need the variation in the parameter and as a result in the create_heatmap is so that we have an easy way 
-# to title the heatmaps and less work with distinguishing between the names of the array files. 
+
 def create_heatmap(array_file):  
     '''
     This function takes in an 8x8 array and makes a heatmap using plotly.go. The heatmap displays the win ratios for the 
