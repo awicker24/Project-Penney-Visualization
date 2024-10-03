@@ -8,7 +8,7 @@ We need to add this section after cleaning up the github
 
 ## Functions
 
-**master_heatmap_function()** takes in the argument `format_type`, specified as ‘html’, ‘png’, or ‘both’, which allows the user to choose whether the heatmap is saved as an html, png, or both. It outputs heatmaps showing the win percentage of one player in the Penney’s Game based on which sequence each player chooses. The **master_heatmap_function()** is the only function exposed to the user, but it calls the function **create_heatmap()** to generate the visualizations as well as the functions **save_heatmap_as_html()** and **save_heatmap_as_png()** to save the heatmaps based on the specified format type.
+**master_heatmap_function()** takes in the argument `format_type`, specified as ‘html’, ‘png’, or ‘both’, which allows the user to choose whether the heatmap is saved as an html, png, or both. It outputs heatmaps showing the win percentage of one player in the Penney’s Game based on which sequence each player chooses. **master_heatmap_function()** is the only function exposed to the user, but it calls the function **create_heatmap()** to generate the visualizations as well as the functions **save_heatmap_as_html()** and **save_heatmap_as_png()** to save the heatmaps based on the specified format type.
 
 **create_heatmap()** takes in the argument `array_file`, specified as the file './data/variation1_array.npy' by the master_heamap_function. It outputs an interactive plotly graph object heatmap.
 
@@ -26,7 +26,7 @@ We need to add this section after cleaning up the github
 
 ## Collaborators
 
-Andrew Choi
-Arianna DeBoer
-Zoe Cummings
+Andrew Choi<br>
+Arianna DeBoer<br>
+Zoe Cummings<br>
 Annie Wicker
