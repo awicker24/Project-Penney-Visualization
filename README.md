@@ -1,7 +1,6 @@
 # Penney’s Game Heatmap Visualization
 
----
-### Files
+## Files
 
 We need to add this section after cleaning up the github
 
