@@ -134,3 +134,6 @@ def master_heatmap_function(format_type):
         save_heatmap_as_png(fig2, 'heatmap_variation_2')
     else:
         print(f"Unsupported format type: {format_type}")
+
+
+# use master_heatmap_function(format_type='both') as a test
