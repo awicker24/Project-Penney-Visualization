@@ -4,7 +4,7 @@ This project creates a set of heatmaps visualizing the simulation of Penney's Ga
 
 ## Files
 
-We need to add this section after cleaning up the github
+The function works with data stored as .npy files in a folder named `data_folder`. Each .npy file is then loaded and added to the data from all of the games played previously. 
 
 ## Functions
 
